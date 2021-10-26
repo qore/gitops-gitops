@@ -18,7 +18,7 @@ pipeline {
     }
     stage ('Apply resources') {
       when { 
-        brahcn 'master'
+         branch 'master'
       }
       steps {
         sh 'oc apply -k config'
